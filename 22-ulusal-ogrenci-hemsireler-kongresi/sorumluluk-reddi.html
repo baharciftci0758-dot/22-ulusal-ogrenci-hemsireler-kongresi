@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sorumluluk Reddi — 22. Ulusal Hemşirelik Öğrencileri Kongresi</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .main-nav li.has-sub { position: relative; }
+    .main-nav .submenu { display: none; position: absolute; top: 100%; left: 0; min-width: 260px; margin: 0; padding: 0.5rem 0; list-style: none; background: #fff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 100; flex-direction: column; }
+    .main-nav li.has-sub:hover > .submenu, .main-nav li.has-sub:focus-within > .submenu { display: flex; }
+    .main-nav .submenu li { display: block; border: 0; margin: 0; }
+    .main-nav .submenu a { display: block; padding: 0.65rem 1.25rem; color: #555 !important; white-space: normal; }
+    .main-nav .submenu a:hover { color: #1f2f5c !important; background: #f3f5f9; }
+    @media (max-width: 768px) { .main-nav .submenu { display: flex; position: static; box-shadow: none; background: transparent; padding: 0 0 0 1rem; } .main-nav .submenu a { color: inherit !important; } }
+  </style>
 </head>
 <body>
 
@@ -21,8 +30,15 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Ana Sayfa</a></li>
-          <li><a href="program.html">Program</a></li>
+          <li class="has-sub"><a href="program.html">Program ▾</a>
+            <ul class="submenu">
+              <li><a href="program.html">Kongre Programı</a></li>
+              <li><a href="sosyal-program.html">Sosyal Program</a></li>
+              <li><a href="konusmacilar.html">Davetli Konuşmacılar ve Oturum Başkanları</a></li>
+            </ul>
+          </li>
           <li><a href="kayit-bildiri.html">Kayıt / Bildiri</a></li>
+          <li><a href="konaklama.html">Konaklama</a></li>
           <li><a href="kurullar.html">Kurullar</a></li>
           <li><a href="index.html#tarihler">Önemli Tarihler</a></li>
           <li><a href="index.html#iletisim">İletişim</a></li>
@@ -86,7 +102,7 @@
         <p>
           <strong>Bahar Çiftçi</strong> — Düzenleme Kurulu Başkanı<br>
           Atatürk Üniversitesi Hemşirelik Fakültesi<br>
-          <a href="mailto:bahar.ciftci@atauni.edu.tr">bahar.ciftci@atauni.edu.tr</a>
+          <a href="mailto:uhokkongre@gmail.com">uhokkongre@gmail.com</a>
         </p>
 
         <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">

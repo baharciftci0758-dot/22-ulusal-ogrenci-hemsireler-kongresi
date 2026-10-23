@@ -6,6 +6,15 @@
   <meta name="description" content="22. Ulusal Hemşirelik Öğrencileri Kongresi kayıt, bildiri kuralları ve bildiri gönderimi bilgileri">
   <title>Kayıt ve Bildiri Gönderimi — 22. Ulusal Hemşirelik Öğrencileri Kongresi</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .main-nav li.has-sub { position: relative; }
+    .main-nav .submenu { display: none; position: absolute; top: 100%; left: 0; min-width: 260px; margin: 0; padding: 0.5rem 0; list-style: none; background: #fff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 100; flex-direction: column; }
+    .main-nav li.has-sub:hover > .submenu, .main-nav li.has-sub:focus-within > .submenu { display: flex; }
+    .main-nav .submenu li { display: block; border: 0; margin: 0; }
+    .main-nav .submenu a { display: block; padding: 0.65rem 1.25rem; color: #555 !important; white-space: normal; }
+    .main-nav .submenu a:hover { color: #1f2f5c !important; background: #f3f5f9; }
+    @media (max-width: 768px) { .main-nav .submenu { display: flex; position: static; box-shadow: none; background: transparent; padding: 0 0 0 1rem; } .main-nav .submenu a { color: inherit !important; } }
+  </style>
 </head>
 <body>
 
@@ -22,8 +31,15 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Ana Sayfa</a></li>
-          <li><a href="program.html">Program</a></li>
+          <li class="has-sub"><a href="program.html">Program ▾</a>
+            <ul class="submenu">
+              <li><a href="program.html">Kongre Programı</a></li>
+              <li><a href="sosyal-program.html">Sosyal Program</a></li>
+              <li><a href="konusmacilar.html">Davetli Konuşmacılar ve Oturum Başkanları</a></li>
+            </ul>
+          </li>
           <li><a href="kayit-bildiri.html">Kayıt / Bildiri</a></li>
+          <li><a href="konaklama.html">Konaklama</a></li>
           <li><a href="kurullar.html">Kurullar</a></li>
           <li><a href="index.html#tarihler">Önemli Tarihler</a></li>
           <li><a href="index.html#iletisim">İletişim</a></li>
@@ -44,7 +60,7 @@
   <section>
     <div class="container">
       <p class="section-lead">
-        Kongreye katılım, bildiri hazırlama ve bildiri gönderimine ilişkin bilgiler bu sayfada yer alacaktır. Aşağıdaki bölümler hazırlık aşamasındadır; ayrıntılar ilerleyen günlerde eklenecektir.
+        Kongreye katılım, bildiri hazırlama ve bildiri gönderimine ilişkin bilgiler bu sayfada yer almaktadır. Kayıt işlemleri hazırlık aşamasındadır; ayrıntılar ilerleyen günlerde duyurulacaktır.
       </p>
       <div class="cards-grid">
         <div class="card">
@@ -101,18 +117,66 @@
   <section id="bildiri-kurallari">
     <div class="container">
       <h2 class="section-title">Bildiri Kuralları</h2>
+      <p style="margin-bottom: 1rem;">
+        <a href="Bildiri_Kurallari.docx" download style="display: inline-block; padding: 0.6rem 1.25rem; background: var(--accent); color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;">Bildiri Kuralları (Word) — İndir</a>
+      </p>
       <div class="info-box">
-        <p>
-          Bildiri kuralları belgesi (Word dosyası) hazırlanmaktadır ve ilerleyen günlerde bu bölüme eklenecektir. Belge yayımlandığında bildirilerin nasıl hazırlanacağına dair tüm ayrıntılar buradan indirilebilecektir.
-        </p>
-        <p style="margin-top: 0.75rem;">Belgede şu başlıklar yer alacaktır:</p>
-        <ul>
-          <li>Bildirilerin hazırlanış biçimi ve yazım kuralları</li>
-          <li>Sözlü bildiri ve poster sunum esasları</li>
-          <li>Değerlendirme süreci: tüm bildiriler çift kör hakem değerlendirmesinden geçirilecek, her bildiri en az iki bağımsız hakem tarafından değerlendirilecektir</li>
-          <li>Kabul edilen bildirilerin ISBN'li bildiri kitabında yayımlanması</li>
-        </ul>
-        <p style="margin-top: 0.75rem;"><strong>Bildiri Kuralları (Word):</strong> Hazırlık aşamasındadır, ilerleyen günlerde eklenecektir.</p>
+        <h3>ÖZET BİLDİRİ SON GÖNDERİM TARİHİ</h3>
+          <ul>
+            <li>20 Kasım 2026</li>
+            <li>TÜBİTAK 2224-B katılım desteğine başvuracak öğrencilerin bildirilerini 27 Ekim 2026, saat 17.30’a kadar göndermiş olmaları gerekir.</li>
+          </ul>
+        <h3 style="margin-top: 1.5rem;">BİLDİRİ GÖNDERİM KURALLARI</h3>
+          <ul>
+            <li>Bildiri özetleri Türkçe veya İngilizce hazırlanabilir; sözlü veya poster olarak sunulabilir.</li>
+            <li>Kongrede yalnızca özet metin bildiri kabulü yapılmaktadır.</li>
+            <li>Bildiriler, kongre e-posta adresi olan <a href="mailto:uhokkongre@gmail.com">uhokkongre@gmail.com</a>’a gönderilecektir.</li>
+            <li>E-postanın konu satırına “Bildiri – Sunan Yazarın Adı Soyadı” yazılmalıdır.</li>
+            <li>Bildiriler, sunan yazar tarafından gönderilmelidir.</li>
+            <li>Kongre kitabında yer alabilmesi için sunan yazarın kongre kaydı zorunludur.</li>
+            <li>Kabul edilen bildiriler ISBN’li bildiri kitabında yayımlanacaktır.</li>
+            <li>Bildiriler çift kör hakemlik (double-blind peer review) süreci ile değerlendirilecek, her bildiri en az iki bağımsız hakem tarafından incelenecektir.</li>
+            <li>Çift kör değerlendirmenin sağlanması için özet dosyasında yazar adı, kurum ve iletişim bilgisi bulunmamalıdır. Yazar adları (çalışmadaki sıraya göre, sunan yazarın adı altı çizili olarak) ve kurum adı (fakülte, bölüm, şehir belirtilmeden) e-postanın içinde ayrıca yazılmalıdır.</li>
+            <li>Bildiri özeti en fazla 350 kelime olmalıdır.</li>
+            <li>Başlık kısa, açıklayıcı ve kısaltma içermeyecek şekilde yazılmalıdır. Her kelimenin ilk harfi büyük olmalıdır. Türkçe başlıklarda “ve”, İngilizce başlıklarda “on, of” küçük harfle yazılır. İngilizce başlıklarda Türkçe karakter kullanılmamalıdır.</li>
+            <li>Anahtar kelime sayısı 3–5 arasında olmalıdır.</li>
+            <li>Özetler Times New Roman, 12 punto, 1,5 satır aralığı ile yazılmalıdır.</li>
+            <li>Bir katılımcı en fazla 2 bildiri gönderebilir.</li>
+            <li>Bilimsel ve hukuki sorumluluk yazarlara aittir.</li>
+            <li>Özet bölümleri şöyle düzenlenmelidir:
+            <ul>
+              <li>Orijinal Araştırma (TR): Giriş ve Amaç, Yöntem, Bulgular, Sonuç</li>
+              <li>Orijinal Araştırma (EN): Introduction and Aim, Method, Results, Conclusion</li>
+              <li>Olgu Sunumu (TR): Giriş ve Amaç, Olgu(lar), Sonuç</li>
+              <li>Olgu Sunumu (EN): Introduction and Aim, Case(s), Conclusion</li>
+              <li>Derleme bildirileri düz metin şeklinde hazırlanmalıdır.</li>
+            </ul>
+            </li>
+          </ul>
+        <h3 style="margin-top: 1.5rem;">GERİ BİLDİRİM</h3>
+          <ul>
+            <li>Bildiri özetleri hakem değerlendirmesinden sonra kabul veya ret olarak yazarlara e-posta ile bildirilecektir.</li>
+            <li>Kabul edilen bildirilerin sunulmaması halinde ücret iadesi yapılmaz.</li>
+          </ul>
+        <h3 style="margin-top: 1.5rem;">SÖZLÜ BİLDİRİ SUNUM KURALLARI</h3>
+          <ul>
+            <li>Sözlü sunumlar Türkçe yapılacaktır.</li>
+            <li>Sunum süresi en fazla 5 dakikadır.</li>
+            <li>Sunumlar, oturum başlamadan en az 2 saat önce salon görevlisine teslim edilmelidir.</li>
+            <li>Sözlü bildiriler, kongre programında yer alan paralel oturumlarda sunulacaktır.</li>
+          </ul>
+        <h3 style="margin-top: 1.5rem;">POSTER BİLDİRİ SUNUM KURALLARI</h3>
+          <ul>
+            <li>Poster bildiriler, kongre programında belirtilen saatlerde ana bina fuaye alanında poster başında sunulacak ve jüri tarafından değerlendirilecektir.</li>
+            <li>Posterler 90 × 120 cm boyutunda, dikey olarak hazırlanmalı ve basılı olarak getirilmelidir.</li>
+            <li>Sunum sırasında posterin başında sunan yazar bulunmalıdır.</li>
+          </ul>
+        <h3 style="margin-top: 1.5rem;">KONGRE ÖDÜLLERİ</h3>
+          <ul>
+            <li>Kongrede en iyi sözlü bildiri, poster, öğrenci araştırması ve inovatif bakım fikri ödülleri verilecektir.</li>
+            <li>Ödüller kongre kapanışında açıklanacaktır.</li>
+            <li>Ödül verilecek bildiri sayısı ve değerlendirme ölçütleri bilimsel kurul tarafından belirlenecektir.</li>
+          </ul>
       </div>
     </div>
   </section>
@@ -123,13 +187,14 @@
       <div class="info-box">
         <p>Bildiriler, kongre e-posta adresine gönderilecektir. Gönderim adımları şöyledir:</p>
         <ol>
-          <li>Bildiri kuralları belgesini inceleyiniz.</li>
-          <li>Bildirinizi belirtilen kurallara uygun olarak hazırlayınız.</li>
-          <li>Bildirinizi, gönderim son tarihi olan <strong>20 Kasım 2026</strong>'ya kadar <a href="mailto:uhokkongre@gmail.com">uhokkongre@gmail.com</a> adresine gönderiniz.</li>
-          <li>Gönderilen bildiriler çift kör hakem değerlendirmesine alınır; değerlendirme sonucu bildiri sahibine bildirilir.</li>
+          <li>Bildiri kurallarını inceleyiniz.</li>
+          <li>Özetinizi belirtilen kurallara uygun olarak hazırlayınız. Özet dosyasında yazar adı, kurum ve iletişim bilgisi bulunmamalıdır.</li>
+          <li>E-postanın konu satırına “Bildiri – Sunan Yazarın Adı Soyadı” yazınız. Yazar adlarını ve kurum adını e-postanın içinde belirtiniz.</li>
+          <li>Özetinizi, son gönderim tarihi olan <strong>20 Kasım 2026</strong>'ya kadar <a href="mailto:uhokkongre@gmail.com">uhokkongre@gmail.com</a> adresine gönderiniz.</li>
+          <li>Gönderilen bildiriler çift kör hakem değerlendirmesine alınır; kabul veya ret sonucu e-posta ile bildirilir.</li>
         </ol>
         <p style="margin-top: 0.75rem;">
-          Dosya adlandırma, e-posta konu başlığı gibi gönderim ayrıntıları hazırlık aşamasındadır ve bildiri kuralları belgesiyle birlikte duyurulacaktır.
+          <strong>TÜBİTAK 2224-B katılım desteğine başvuracak öğrenciler</strong> bildirilerini 27 Ekim 2026, saat 17.30’a kadar göndermiş olmalıdır. <a href="#tubitak-2224b">Destek bilgilendirmesi →</a>
         </p>
       </div>
     </div>
@@ -190,8 +255,11 @@
           <h4>Hızlı Bağlantılar</h4>
           <div class="footer-links">
             <a href="index.html">Ana Sayfa</a>
-            <a href="program.html">Program</a>
+            <a href="program.html">Kongre Programı</a>
+            <a href="sosyal-program.html">Sosyal Program</a>
+            <a href="konusmacilar.html">Davetli Konuşmacılar</a>
             <a href="kayit-bildiri.html">Kayıt / Bildiri</a>
+            <a href="konaklama.html">Konaklama</a>
             <a href="kvkk.html">KVKK Aydınlatma Metni</a>
             <a href="sorumluluk-reddi.html">Sorumluluk Reddi</a>
           </div>
